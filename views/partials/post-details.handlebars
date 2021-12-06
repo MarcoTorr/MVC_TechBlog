@@ -1,0 +1,27 @@
+<section class="card flex">
+      <div class="div-post">
+            <div class="column">
+                  <div class="post_user">
+                  <strong class="post_username">{{title}}</strong>
+                  <span class="post_date">{{posting_date}}</span>
+                  <p class="post_date">Username: {{user.username}} </p>
+                  </div>
+                  <div class="post_body">
+                  {{content}}  
+                  </div>
+            </div>
+            <br>
+            <div class="column" style="font-size: 18px;" >
+                  <button ><a href='/api/post/{{id}}/addComment'>Add Comment</a></button>
+            </div> 
+      </div>
+      <br>
+      <div>
+            <p>Comments:</p>
+            {{#each comments}}
+            {{> comment-details}}
+            {{/each}}
+      </div>
+</section>
+<br>
+<script src="/newComment.js"></script>

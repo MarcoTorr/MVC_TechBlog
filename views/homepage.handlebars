@@ -1,0 +1,10 @@
+{{> navbar }}
+<div style="height:50px"></div>
+<section class="container">
+  <section class="justify-center">
+    {{#each posts as |entry|}}
+    {{> post-details}}
+    {{/each}}
+  </section>
+</section>
+

@@ -1,0 +1,10 @@
+{{> navbar }}
+<section class="container">
+  <button id="newBtn" style='position:absolute;right:30px'><a href='/api/post/add'>Add Tip</a></button>
+  <br>
+  <section class="flex-row justify-center">
+    {{#each myposts as |note|}}
+    {{> mypost-details}}
+    {{/each}}
+  </section>
+</section>

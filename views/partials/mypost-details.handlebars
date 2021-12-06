@@ -1,0 +1,21 @@
+  <section class="post" >
+      <div class="row">
+          <div class="column">
+                <div class="post__user">
+                <strong class="post__username">{{title}}</strong>
+                <span class="post__date">{{posting_date}}</span>
+                </div>
+                <div class="post__body">
+                {{content}}  
+                </div>
+          </div>
+          <div class="column" style="position:absolute ;right:150px" id={{id}}>
+              <button id="updateBtn"><a href='/api/dashboard/update/{{id}}'>Update</a></button>
+              <button id="deleteBtn"><a href='/api/dashboard/delete/{{id}}'>Delete</a></button>
+          </div>
+      </div>
+    
+  </section>
+
+
+

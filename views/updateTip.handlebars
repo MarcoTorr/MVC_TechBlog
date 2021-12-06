@@ -1,0 +1,22 @@
+{{> navbar }}     
+<link rel="stylesheet" href="/style.css">
+<section class='container' style='padding:20px'>
+  <div class="row justify-space-between-md" >
+    <div class="post">
+      <h2 class="page-title" >Update Tip</h2>
+      <form class="form new-form">
+        <div class="form-group">
+          <label for="title-form">Title:</label>
+          <input class="form-input" type="text" id="title-form" style='width:100%'/>
+        </div>
+        <div class="form-group">
+          <label for="description-form">Tip:</label>
+          <input class="form-input" type="text" id="description-form" style='width:100%'/>
+        </div>
+        <div class="form-group" id={{id}}>
+          <button class="btn btn-primary btn-submit" type="submit" >Save</button>
+        </div>
+      </form>
+    </div>
+ <script src="/updatePost.js"></script>
+   

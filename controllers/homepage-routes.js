@@ -10,9 +10,6 @@ router.get('/', async (req, res) => {
           include:[{
             model:User,
             attributes: ['username']},
-            {model:Comments,
-              include:{model:User,attributes: ['username']},
-            }
           ],
         });
         const posts = dbPostData.map((post) =>

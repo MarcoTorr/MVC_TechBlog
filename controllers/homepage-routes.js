@@ -16,8 +16,6 @@ router.get('/', async (req, res) => {
         post.get({ plain: true })
         );
      
-        console.log(posts[0].comments);
-
           res.render('homepage', {
             posts,
 
